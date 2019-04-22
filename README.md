@@ -1,3 +1,4 @@
+Michael Jenkins 
 # Sprint Challenge: Redux - Smurfs
 
 This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored Redux, Redux I - II and Async Redux I - II. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web.
@@ -23,8 +24,21 @@ In this challenge, you are to build the Smurfs village once again, only this tim
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+    Redux Actions are payloads of information that send data from an application to a store
+    Redux Reducers specify how the application's state changes in response to actions sent to the store.
+    A Redux Store holds a whole state tree of an application. The store is the only source of data for the application, which is why it is referred to as the 'single source of truth'.
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+    Application state is global, and your component state is local.
+    Redux uses the store to hold application state which means any component anywhere in the app can get access to the store as long as they hook/connect into it.
+    Component state can only be updated within that component and passed down to its children via props.
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+    Redux-thunk is a middleware that allows Redux to handle asynchronous operations. It allows action creators to perform async API calls.
+
 
 ## Project Set Up
 
